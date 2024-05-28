@@ -14,4 +14,31 @@ def singFred():
     happy()
 
 
-singFred()
+def singLucy():
+    happy()
+    happy()
+    print("Happy Birthday, dear Lucy")
+    happy()
+
+
+# Lets write a generic function called to avoid duplication
+def sing(person):
+    happy()
+    happy()
+    print("Happy Birthday dear", person + ".")
+    happy()
+
+
+def main():
+    singFred()
+    print()
+    singLucy()
+
+    print()
+    print()
+    sing("Fortunate")
+    print()
+    sing("Lucky")
+
+
+main()
